@@ -1,0 +1,85 @@
+:root {
+  /* colours */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  /* widths */
+  --mobile: 375px;
+  --desktop: 1440px;
+  /* font */
+  --family: 'Outfit', sans-serif;
+  --weight-regular: 400;
+  --weight-bold: 900;
+  --heading-one: 2rem;
+  --paragraph: 1.5rem;
+  /* borders */
+  --border-radius: 1.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--light-gray);
+  font-family: var(--family);
+  font-weight: var(--weight-regular);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.qr-code {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: 1rem 1rem 2.4rem hsla(0, 0%, 0%, 0.05);
+  padding: 1.4rem;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.qr-code__image {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: calc(var(--border-radius) / 2);
+}
+
+.qr-code__text-container {
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.qr-code__header {
+  color: var(--dark-blue);
+  font-weight: var(--weight-bold);
+  font-size: var(--heading-one);
+  margin-bottom: 1.4rem;
+}
+
+.qr-code__description {
+  color: var(--grayish-blue);
+  font-size: var(--paragraph);
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
