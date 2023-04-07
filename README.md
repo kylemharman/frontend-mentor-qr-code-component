@@ -10,7 +10,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [View the challange solution](https://kylemharman.github.io/frontend-mentor-qr-code-component/)
 
 ### Built with
 
